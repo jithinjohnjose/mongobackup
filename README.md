@@ -14,6 +14,6 @@ Here’s the brief overview of what we’re going to do:
 
 3)Set up cron to nightly run the script to execute the backup
 
-4) Restore mongo database using : sudo mongorestore --db <dbname> --username <username> --password <password> --drop $DEST
+4)Restore mongo database using : sudo mongorestore --db <dbname> --username <username> --password <password> --drop $DEST
 
 NB : To set mongo username and password refer : https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-mongodb-on-ubuntu-16-04
