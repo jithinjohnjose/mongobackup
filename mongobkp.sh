@@ -8,7 +8,7 @@ DEST=/db_backups/$DIR
 mkdir -p $DEST
 
 #dump database 
-mongodump -h <your_database_host> -d <your_database_name> -u <username> -p <password> -o $DEST
+mongodump --host <your_database_host> --port 3017 --db <your_database_name> --username <username> --password <password> --out $DEST
 
 # Delete files older than 10 days
 find $DEST/* -mtime +10 -exec rm {} \;
